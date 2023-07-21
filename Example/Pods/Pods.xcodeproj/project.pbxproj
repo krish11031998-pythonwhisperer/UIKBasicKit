@@ -409,7 +409,6 @@
 				EF95E6552A6AB82F0058D1A9 /* CollectionCompositionalLayout */,
 				EF95E6582A6AB82F0058D1A9 /* CollectionSection.swift */,
 				EF95E6592A6AB82F0058D1A9 /* CollectionViewFunctions.swift */,
-				EF95E65A2A6AB82F0058D1A9 /* CommonCollectionItemView */,
 				EF95E65B2A6AB82F0058D1A9 /* CollectionCellBuilder.swift */,
 				EF95E65C2A6AB82F0058D1A9 /* CollectionColumn.swift */,
 				EF95E65D2A6AB82F0058D1A9 /* ConfigurableHeaderOrFooter.swift */,
@@ -425,13 +424,6 @@
 				EF95E6572A6AB82F0058D1A9 /* CollectionCompositionalSupplementaryViews.swift */,
 			);
 			path = CollectionCompositionalLayout;
-			sourceTree = "<group>";
-		};
-		EF95E65A2A6AB82F0058D1A9 /* CommonCollectionItemView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonCollectionItemView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
