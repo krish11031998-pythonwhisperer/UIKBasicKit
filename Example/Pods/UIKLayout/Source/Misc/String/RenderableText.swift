@@ -68,7 +68,7 @@ extension String: RenderableText {
 		NSAttributedString(string: self, attributes: attributes)
 	}
 	
-	public func styled(font: CustomFonts, color: UIColor, size: CGFloat) -> NSAttributedString {
+	public func styled(font: CustomFontType, color: UIColor, size: CGFloat) -> NSAttributedString {
 		let attributes: [NSAttributedString.Key:Any] = [
 			.font: font.fontBuilder(size: size) ?? .systemFont(ofSize: size),
 			.foregroundColor: color,
@@ -103,7 +103,7 @@ extension NSAttributedString: RenderableText {
 		return .init(attributedString: copy)
 	}
 	
-	public func styled(font: CustomFonts, color: UIColor, size: CGFloat) -> NSAttributedString {
+	public func styled(font: CustomFontType, color: UIColor, size: CGFloat) -> NSAttributedString {
 		let attributes: [NSAttributedString.Key:Any] = [
 			.font: font.fontBuilder(size: size) ?? .systemFont(ofSize: size),
 			.foregroundColor: color,

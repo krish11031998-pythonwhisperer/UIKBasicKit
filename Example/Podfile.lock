@@ -1,7 +1,7 @@
 PODS:
   - UIKBasicKit (0.1.1):
     - UIKLayout
-  - UIKLayout (0.1.4.1)
+  - UIKLayout (0.1.5)
 
 DEPENDENCIES:
   - UIKBasicKit (from `../`)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   UIKBasicKit: 666b5a90467637e2df4f514e1bb96df1ea7c7a3a
-  UIKLayout: ea6b8d08a26e4cdece8c9e0c905f94d673dca317
+  UIKLayout: cd813fa6868090a5972174b4db868c7322d4225f
 
 PODFILE CHECKSUM: 8ffc2781e52b98feeefea28ed713c83f1275b2a3
 

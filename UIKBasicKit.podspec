@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A Simple Kit that used to build view, tables and collection. Uses Combine with the use of latest techniques like Collection Compositional Layout, Table View Auto Dimensions and etc.
+'A Simple Kit that used to build view, tables and collection. Uses Combine with the use of latest techniques like Collection Compositional Layout, Table View Auto Dimensions and etc.'
                        DESC
 
   s.homepage         = 'https://github.com/krish11031998-pythonwhisperer/UIKBasicKit'

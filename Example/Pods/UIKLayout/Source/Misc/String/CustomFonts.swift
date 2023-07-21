@@ -7,12 +7,12 @@
 
 import Foundation
 
-public protocol CustomFonts {
+public protocol CustomFontType {
     var name: String { get }
     func fontBuilder(size: CGFloat) -> UIFont?
 }
 
-public extension CustomFonts {
+public extension CustomFontType {
     func fontBuilder(size: CGFloat) -> UIFont? {
         .init(name: name, size: size)
     }
