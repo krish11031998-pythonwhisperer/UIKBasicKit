@@ -44,14 +44,14 @@
 		E3D83E60666E56ECDA833AE0FC590D41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EECEFF452DC2BE6491F5DF8BC95EFB05 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C6340776B6629E65D5093AD826F37 /* CGPoint.swift */; };
 		EF17044841A82A00C32A36C68645A4B6 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C27189C8D47898443C6653B23D6DF /* TableSection.swift */; };
-		EF95E65E2A6AB82F0058D1A9 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6542A6AB82F0058D1A9 /* CollectionDataSource.swift */; };
-		EF95E65F2A6AB82F0058D1A9 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6562A6AB82F0058D1A9 /* CollectionViewLayout.swift */; };
-		EF95E6602A6AB82F0058D1A9 /* CollectionCompositionalSupplementaryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6572A6AB82F0058D1A9 /* CollectionCompositionalSupplementaryViews.swift */; };
-		EF95E6612A6AB82F0058D1A9 /* CollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6582A6AB82F0058D1A9 /* CollectionSection.swift */; };
-		EF95E6622A6AB82F0058D1A9 /* CollectionViewFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6592A6AB82F0058D1A9 /* CollectionViewFunctions.swift */; };
-		EF95E6632A6AB82F0058D1A9 /* CollectionCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E65B2A6AB82F0058D1A9 /* CollectionCellBuilder.swift */; };
-		EF95E6642A6AB82F0058D1A9 /* CollectionColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E65C2A6AB82F0058D1A9 /* CollectionColumn.swift */; };
-		EF95E6652A6AB82F0058D1A9 /* ConfigurableHeaderOrFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E65D2A6AB82F0058D1A9 /* ConfigurableHeaderOrFooter.swift */; };
+		EF95E67F2A6ABEC30058D1A9 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6782A6ABEC30058D1A9 /* CollectionViewLayout.swift */; };
+		EF95E6802A6ABEC30058D1A9 /* CollectionCompositionalSupplementaryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6792A6ABEC30058D1A9 /* CollectionCompositionalSupplementaryViews.swift */; };
+		EF95E6812A6ABEC30058D1A9 /* CollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E67A2A6ABEC30058D1A9 /* CollectionSection.swift */; };
+		EF95E6822A6ABEC30058D1A9 /* CollectionViewFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E67B2A6ABEC30058D1A9 /* CollectionViewFunctions.swift */; };
+		EF95E6832A6ABEC30058D1A9 /* CollectionCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E67C2A6ABEC30058D1A9 /* CollectionCellBuilder.swift */; };
+		EF95E6842A6ABEC30058D1A9 /* CollectionColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E67D2A6ABEC30058D1A9 /* CollectionColumn.swift */; };
+		EF95E6852A6ABEC30058D1A9 /* ConfigurableHeaderOrFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E67E2A6ABEC30058D1A9 /* ConfigurableHeaderOrFooter.swift */; };
+		EF95E69A2A6ABF180058D1A9 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E6992A6ABF180058D1A9 /* CollectionDataSource.swift */; };
 		F35B995A2EA792D1A6E2ED78D1041147 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6566E7CBC2E692E201035E0F575AD90A /* CGFloat.swift */; };
 		FDBEEF20E1218DA5A5D5E55B70926078 /* Pods-UIKBasicKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD028C6820F44B04115A59581AC4055B /* Pods-UIKBasicKit_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -152,14 +152,14 @@
 		E153DFA77C8965D13A52337803A716AD /* UIKBasicKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIKBasicKit.modulemap; sourceTree = "<group>"; };
 		E836B859B3DC98730FC0CD2EA6CB7407 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = Source/Misc/Dimensions/Int.swift; sourceTree = "<group>"; };
 		E8E5858BC39A648B946551C5EEE10EAE /* TableRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
-		EF95E6542A6AB82F0058D1A9 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
-		EF95E6562A6AB82F0058D1A9 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
-		EF95E6572A6AB82F0058D1A9 /* CollectionCompositionalSupplementaryViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCompositionalSupplementaryViews.swift; sourceTree = "<group>"; };
-		EF95E6582A6AB82F0058D1A9 /* CollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSection.swift; sourceTree = "<group>"; };
-		EF95E6592A6AB82F0058D1A9 /* CollectionViewFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFunctions.swift; sourceTree = "<group>"; };
-		EF95E65B2A6AB82F0058D1A9 /* CollectionCellBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellBuilder.swift; sourceTree = "<group>"; };
-		EF95E65C2A6AB82F0058D1A9 /* CollectionColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionColumn.swift; sourceTree = "<group>"; };
-		EF95E65D2A6AB82F0058D1A9 /* ConfigurableHeaderOrFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableHeaderOrFooter.swift; sourceTree = "<group>"; };
+		EF95E6782A6ABEC30058D1A9 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
+		EF95E6792A6ABEC30058D1A9 /* CollectionCompositionalSupplementaryViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCompositionalSupplementaryViews.swift; sourceTree = "<group>"; };
+		EF95E67A2A6ABEC30058D1A9 /* CollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSection.swift; sourceTree = "<group>"; };
+		EF95E67B2A6ABEC30058D1A9 /* CollectionViewFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFunctions.swift; sourceTree = "<group>"; };
+		EF95E67C2A6ABEC30058D1A9 /* CollectionCellBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellBuilder.swift; sourceTree = "<group>"; };
+		EF95E67D2A6ABEC30058D1A9 /* CollectionColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionColumn.swift; sourceTree = "<group>"; };
+		EF95E67E2A6ABEC30058D1A9 /* ConfigurableHeaderOrFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableHeaderOrFooter.swift; sourceTree = "<group>"; };
+		EF95E6992A6ABF180058D1A9 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		F0B7B616F2021967ABBC9547B19CEF5F /* UIKBasicKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIKBasicKit-Info.plist"; sourceTree = "<group>"; };
 		F583E062905942D3E38B0C67929472ED /* UIView+General.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+General.swift"; path = "Source/UIView/UIView+General.swift"; sourceTree = "<group>"; };
 		FCA9CEF4EE08DEC48957EB510AAB187A /* UIKLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIKLayout.debug.xcconfig; sourceTree = "<group>"; };
@@ -348,7 +348,7 @@
 		C16FC6851707924132FB033A2F28F9F0 /* UIKBasicKit */ = {
 			isa = PBXGroup;
 			children = (
-				EF95E6532A6AB82F0058D1A9 /* CollectionView */,
+				EF95E6762A6ABEC30058D1A9 /* CollectionView */,
 				994BEEDEA4F88A987F6CD6039EE223CD /* TableView */,
 				415A3D22235477A922C93DE83EA70A02 /* Common */,
 				74B73279F252136D1660CDB07FD7B594 /* Pod */,
@@ -402,26 +402,26 @@
 			path = "Example/Pods/Target Support Files/UIKBasicKit";
 			sourceTree = "<group>";
 		};
-		EF95E6532A6AB82F0058D1A9 /* CollectionView */ = {
+		EF95E6762A6ABEC30058D1A9 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				EF95E6542A6AB82F0058D1A9 /* CollectionDataSource.swift */,
-				EF95E6552A6AB82F0058D1A9 /* CollectionCompositionalLayout */,
-				EF95E6582A6AB82F0058D1A9 /* CollectionSection.swift */,
-				EF95E6592A6AB82F0058D1A9 /* CollectionViewFunctions.swift */,
-				EF95E65B2A6AB82F0058D1A9 /* CollectionCellBuilder.swift */,
-				EF95E65C2A6AB82F0058D1A9 /* CollectionColumn.swift */,
-				EF95E65D2A6AB82F0058D1A9 /* ConfigurableHeaderOrFooter.swift */,
+				EF95E6992A6ABF180058D1A9 /* CollectionDataSource.swift */,
+				EF95E6772A6ABEC30058D1A9 /* CollectionCompositionalLayout */,
+				EF95E67A2A6ABEC30058D1A9 /* CollectionSection.swift */,
+				EF95E67B2A6ABEC30058D1A9 /* CollectionViewFunctions.swift */,
+				EF95E67C2A6ABEC30058D1A9 /* CollectionCellBuilder.swift */,
+				EF95E67D2A6ABEC30058D1A9 /* CollectionColumn.swift */,
+				EF95E67E2A6ABEC30058D1A9 /* ConfigurableHeaderOrFooter.swift */,
 			);
 			name = CollectionView;
 			path = Source/CollectionView;
 			sourceTree = "<group>";
 		};
-		EF95E6552A6AB82F0058D1A9 /* CollectionCompositionalLayout */ = {
+		EF95E6772A6ABEC30058D1A9 /* CollectionCompositionalLayout */ = {
 			isa = PBXGroup;
 			children = (
-				EF95E6562A6AB82F0058D1A9 /* CollectionViewLayout.swift */,
-				EF95E6572A6AB82F0058D1A9 /* CollectionCompositionalSupplementaryViews.swift */,
+				EF95E6782A6ABEC30058D1A9 /* CollectionViewLayout.swift */,
+				EF95E6792A6ABEC30058D1A9 /* CollectionCompositionalSupplementaryViews.swift */,
 			);
 			path = CollectionCompositionalLayout;
 			sourceTree = "<group>";
@@ -606,21 +606,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF95E6602A6AB82F0058D1A9 /* CollectionCompositionalSupplementaryViews.swift in Sources */,
 				4766239E0AB3697E083A8BB9AE7DB71A /* Configurable.swift in Sources */,
 				6709E6B166C0E681175ADE37968E4FB5 /* TableCellBuilder.swift in Sources */,
-				EF95E6642A6AB82F0058D1A9 /* CollectionColumn.swift in Sources */,
+				EF95E6802A6ABEC30058D1A9 /* CollectionCompositionalSupplementaryViews.swift in Sources */,
+				EF95E6822A6ABEC30058D1A9 /* CollectionViewFunctions.swift in Sources */,
+				EF95E6852A6ABEC30058D1A9 /* ConfigurableHeaderOrFooter.swift in Sources */,
+				EF95E67F2A6ABEC30058D1A9 /* CollectionViewLayout.swift in Sources */,
 				31C756355CAD3B6990E1C5077D9364C8 /* TableRow.swift in Sources */,
-				EF95E6622A6AB82F0058D1A9 /* CollectionViewFunctions.swift in Sources */,
+				EF95E6812A6ABEC30058D1A9 /* CollectionSection.swift in Sources */,
 				EF17044841A82A00C32A36C68645A4B6 /* TableSection.swift in Sources */,
-				EF95E65E2A6AB82F0058D1A9 /* CollectionDataSource.swift in Sources */,
-				EF95E6632A6AB82F0058D1A9 /* CollectionCellBuilder.swift in Sources */,
+				EF95E6842A6ABEC30058D1A9 /* CollectionColumn.swift in Sources */,
 				92B1FF0112B479A9ACE0A848CCC1A46A /* TableViewDataSource.swift in Sources */,
-				EF95E6652A6AB82F0058D1A9 /* ConfigurableHeaderOrFooter.swift in Sources */,
-				EF95E65F2A6AB82F0058D1A9 /* CollectionViewLayout.swift in Sources */,
+				EF95E6832A6ABEC30058D1A9 /* CollectionCellBuilder.swift in Sources */,
 				B6C93500D6F07DCF13145B8A875E5994 /* TableViewFunction.swift in Sources */,
 				50618065A8D6E407C3453CC78D81D72D /* UIKBasicKit-dummy.m in Sources */,
-				EF95E6612A6AB82F0058D1A9 /* CollectionSection.swift in Sources */,
+				EF95E69A2A6ABF180058D1A9 /* CollectionDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
