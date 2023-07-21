@@ -1,0 +1,6 @@
+framework module UIKLayout {
+  umbrella header "UIKLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
