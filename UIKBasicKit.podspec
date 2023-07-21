@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKBasicKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of UIKBasicKit.'
+  s.version          = '0.1.1'
+  s.summary          = 'A Simple Kit that used to build view, tables and collection with ease.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Simple Kit that used to build view, tables and collection. Uses Combine with the use of latest techniques like Collection Compositional Layout, Table View Auto Dimensions and etc.
                        DESC
 
   s.homepage         = 'https://github.com/krish11031998-pythonwhisperer/UIKBasicKit'
