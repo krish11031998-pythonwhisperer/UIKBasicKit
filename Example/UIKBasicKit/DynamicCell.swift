@@ -47,7 +47,7 @@ class DynamicCellView: UIView, ConfigurableViewElement {
     
     private lazy var imageView: UIImageView = { .init() }()
     private lazy var cellName: UILabel = { .init() }()
-    private var imageCancellable: AnyCancellable?
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -83,15 +83,8 @@ class DynamicCellView: UIView, ConfigurableViewElement {
             .styled(font: .systemFont(ofSize: 12, weight: .regular), color: .black)
             .render(target: cellName)
         
-        imageCancellable = imageView.loadImage(urlStr: "https://picsum.photos/200/300?random=\(model)")
-            
+        UIImage.randomImages(idx: Int(model) ?? 0).render(on: imageView)
     }
-    
-    func prepareViewForReuse() {
-        imageView.image = nil
-        imageCancellable?.cancel()
-    }
-    
     
 }
 

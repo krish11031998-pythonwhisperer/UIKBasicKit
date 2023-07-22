@@ -69,7 +69,7 @@ class CollectionViewTest: UIViewController {
     }
     
     private func basicDynamicSection() -> CollectionSection {
-        let cells = Array(0...10).map { CollectionItem<DynamicCell>(.init(model: "\($0)")) }
+        let cells = Array(0...20).map { CollectionItem<DynamicCell>(.init(model: "\($0)")) }
         
         let section = NSCollectionLayoutSection.twoByTwoGrid(.absolute(250),
                                                              spacing: 10,

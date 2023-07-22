@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 public class CollectionSection {
-	let cell: [CollectionCellProvider]
-	let customHeader: CollectionSupplementaryProvider?
-	let customFooter: CollectionSupplementaryProvider?
-	let title: String?
-    let layout: NSCollectionLayoutSection?
+	public var cell: [CollectionCellProvider]
+	public var customHeader: CollectionSupplementaryProvider?
+	public var customFooter: CollectionSupplementaryProvider?
+	public var title: String?
+    public var layout: NSCollectionLayoutSection?
 	
 	public init(cell: [CollectionCellProvider],
 		 customHeader: CollectionSupplementaryProvider? = nil,

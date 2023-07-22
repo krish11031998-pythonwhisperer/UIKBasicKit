@@ -16,9 +16,9 @@ public protocol TableSectionSupplementaryViewProvider {
 
 //MARK: - TableSection
 public struct TableSection {
-	var rows:[TableCellProvider]
-    var customHeader: TableSectionSupplementaryViewProvider?
-	var customFooter: TableSectionSupplementaryViewProvider?
+	public var rows:[TableCellProvider]
+    public var customHeader: TableSectionSupplementaryViewProvider?
+	public var customFooter: TableSectionSupplementaryViewProvider?
     
     public init(rows: [TableCellProvider],
          customHeader: TableSectionSupplementaryViewProvider? = nil,

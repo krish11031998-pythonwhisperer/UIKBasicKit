@@ -10,6 +10,10 @@ import Foundation
 import UIKBasicKit
 import Combine
 
+extension UIImage {
+    static func randomImages(idx: Int) -> ImageSource { .remote(url: "https://picsum.photos/200/300?random=\(idx)") }
+}
+
 class BasicTableCellView: UIView, ConfigurableViewElement {
     
     private lazy var imageView: UIImageView = { .init() }()
@@ -39,13 +43,9 @@ class BasicTableCellView: UIView, ConfigurableViewElement {
             .styled(font: .boldSystemFont(ofSize: 12), color: .red)
             .render(target: titleLabel)
         
-        imageCancellable = imageView.loadImage(urlStr: "https://picsum.photos/200/300?random=\(model)")
+        UIImage.randomImages(idx: model).render(on: imageView)
     }
-    
-    func prepareViewForReuse() {
-        imageView.image = nil
-        imageCancellable?.cancel()
-    }
+
 }
 
 typealias BasicTableCell = TableCellBuilder<BasicTableCellView>
