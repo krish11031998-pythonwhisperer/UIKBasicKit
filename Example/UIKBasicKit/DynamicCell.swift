@@ -80,7 +80,7 @@ class DynamicCellView: UIView, ConfigurableViewElement {
     
     public func configure(with model: String) {
         "Cell \(model)"
-            .styled(font: .systemFont(ofSize: 12, weight: .regular), color: .black)
+            .styled(.systemFont(ofSize: 12, weight: .regular), color: .black)
             .render(target: cellName)
         
         UIImage.randomImages(idx: Int(model) ?? 0).render(on: imageView)

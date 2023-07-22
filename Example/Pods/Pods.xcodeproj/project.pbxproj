@@ -48,6 +48,7 @@
 		E3D83E60666E56ECDA833AE0FC590D41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E8EA941DE7951CAEA0F19C77B8026E64 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C00748FCFA051B0DFD6BD6C125BAD /* AppColor.swift */; };
 		EF95E7112A6BD6910058D1A9 /* ViewHeiarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */; };
+		EF95E7132A6C0BCD0058D1A9 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */; };
 		F454CD1E4ED80DCE4A6E8C69FA459E84 /* UIKBasicKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F2BC5DB76A3E4E11A803CEAA2303 /* UIKBasicKit-dummy.m */; };
 		F52BD1FC041583D7D26FCB678A8727B1 /* UIView+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06B48B332AEF95DE93113A4DD99D09 /* UIView+Styling.swift */; };
 		F5CF7B4D04DD023D6B3B8D6D14D86D38 /* CollectionViewFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7D956E672D1197BCC26B572E381D0 /* CollectionViewFunctions.swift */; };
@@ -143,6 +144,7 @@
 		E9BD75E5B6A52255769D3AE6188629B2 /* StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		EF89DA0A7028F8C90D43C6A87CF4FC18 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeiarchy.swift; sourceTree = "<group>"; };
+		EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		F2917F1CB9385F809262CD31695B59E6 /* UIView+Gesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Gesture.swift"; sourceTree = "<group>"; };
 		F74C00748FCFA051B0DFD6BD6C125BAD /* AppColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		FB653A54D51A15E1AAAE3063B30A0358 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				627925C1698F3817E2EE43A52D86A5B1 /* UIView+GraphicRenderer.swift */,
 				307649EF5517486C26AC07C24513B230 /* UIView+Helpers.swift */,
 				1D06B48B332AEF95DE93113A4DD99D09 /* UIView+Styling.swift */,
+				EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */,
 			);
 			name = UIView;
 			path = Source/UIView;
@@ -577,6 +580,7 @@
 				F5CF7B4D04DD023D6B3B8D6D14D86D38 /* CollectionViewFunctions.swift in Sources */,
 				7443F815873C5CF8FF424DF6214202F1 /* CollectionViewLayout.swift in Sources */,
 				D37290356C339A5DA9E04F5ABC5BAE9A /* Configurable.swift in Sources */,
+				EF95E7132A6C0BCD0058D1A9 /* UIStackView.swift in Sources */,
 				6AD1844F104DC450B2D58E403DEF8179 /* ConfigurableHeaderOrFooter.swift in Sources */,
 				B0B45C83D09CACA785E0F4B920BE348F /* CustomFonts.swift in Sources */,
 				343E87533C3225EEC65B732DA31AEE38 /* Image.swift in Sources */,

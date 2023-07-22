@@ -21,7 +21,7 @@ public extension UIImage {
 }
 
 //MARK: - NSAttributedString
-public extension NSAttributedString {
+public extension RenderableText where Self == NSAttributedString {
     
     func appending(_ text: RenderableText) -> NSAttributedString {
         let copy = NSMutableAttributedString(attributedString: self)
@@ -36,7 +36,7 @@ public extension NSAttributedString {
     }
     
     var attributedFont: UIFont? {
-        let attributes = attributes(at: 0, effectiveRange: nil)
+        let attributes = self.attributes(at: 0, effectiveRange: nil)
         return attributes[.font] as? UIFont
     }
     
@@ -48,12 +48,12 @@ public extension NSAttributedString {
         image.toText().appending(" ").appending(self)
     }
     
-    static func + (lhs: UIImage?, rhs: NSAttributedString) -> NSAttributedString {
+    static func + (lhs: UIImage?, rhs: Self) -> NSAttributedString {
         guard let validImage = lhs else { return rhs }
         return validImage.toText(fontHeight: rhs.fontHeight).appending(" ").appending(rhs)
     }
     
-    static func + (lhs: NSAttributedString, rhs: UIImage?) -> NSAttributedString {
+    static func + (lhs: Self, rhs: UIImage?) -> NSAttributedString {
         guard let validImage = rhs else { return lhs }
         return lhs.appending(" ").appending(validImage.toText(fontHeight: lhs.fontHeight))
     }

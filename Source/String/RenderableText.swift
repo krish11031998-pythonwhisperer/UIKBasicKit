@@ -43,7 +43,7 @@ public extension Dictionary where Self.Key == NSAttributedString.Key, Self.Value
 public extension RenderableText {
 	
 	func styled(
-		font: UIFont,
+		_ font: UIFont,
 		color: UIColor = .white,
 		lineSpacing: CGFloat? = nil,
 		alignment: NSTextAlignment? = nil
@@ -94,7 +94,6 @@ extension String: RenderableText {
 
 extension NSAttributedString: RenderableText {
 	
-	
     public var content: String { string }
 	
     public func styled(_ attributes: [Key : Any]) -> NSAttributedString {
@@ -130,7 +129,7 @@ extension NSAttributedString: RenderableText {
 }
 
 //MARK: - Renderable+Dimension
-public extension String {
+public extension RenderableText where Self == String {
     func height(withWidth width: CGFloat, font: UIFont) -> CGFloat {
         let maxSize = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
         let actualSize = self.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin], attributes: [.font : font], context: nil)
@@ -145,17 +144,17 @@ public extension String {
     }
 }
 
-public extension NSAttributedString {
+public extension RenderableText where Self == NSAttributedString {
     func height(withWidth width: CGFloat) -> CGFloat {
         let maxSize = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
-        let actualSize = boundingRect(with: maxSize, options: [.usesLineFragmentOrigin], context: nil)
+        let actualSize = self.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin], context: nil)
         return actualSize.height
     }
-    
+
     func width(withHeight height: CGFloat) -> CGFloat {
         let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
         let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, context: nil)
-        
+
         return ceil(boundingBox.width)
     }
 }

@@ -33,6 +33,6 @@ class BasicFooter: ConfigurableCollectionSV {
     }
     
     public func configure(with model: String) {
-        model.styled(font: .boldSystemFont(ofSize: 24), color: .white).render(target: header)
+        model.styled(.boldSystemFont(ofSize: 24), color: .white).render(target: header)
     }
 }

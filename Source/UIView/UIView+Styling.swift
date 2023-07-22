@@ -76,3 +76,37 @@ public extension UIView {
 }
 
 
+//MARK: - UIView+Shadow
+extension UIView {
+    
+    enum ShadowType {
+        case small, medium, large, highlight
+    }
+    
+    func addShadow(color: UIColor = .black.withAlphaComponent(0.3),
+                   for type: ShadowType) {
+        self.layer.shadowColor = color.cgColor
+        switch type {
+        case .small:
+            self.layer.shadowOpacity = 0.03
+            self.layer.shadowOffset = .init(width: 0, height: 0)
+        case .medium:
+            self.layer.shadowOpacity = 0.05
+            self.layer.shadowOffset = .init(width: 0, height: 0)
+        case .large:
+            self.layer.shadowOpacity = 0.12
+            self.layer.shadowOffset = .init(width: 0, height: 0)
+        case .highlight:
+            self.layer.shadowOpacity = 0.5
+            self.layer.shadowOffset = .init(width: 0, height: 0)
+        }
+        self.layer.shadowRadius = 30
+    }
+    
+    func removeShadow() {
+        self.layer.shadowColor = UIColor.clear.cgColor
+        self.layer.shadowOpacity = 0
+        self.layer.shadowOffset = .zero
+        self.layer.shadowRadius = 0
+    }
+}

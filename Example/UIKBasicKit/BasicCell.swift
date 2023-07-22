@@ -30,7 +30,7 @@ class BasicCollectionCellView: UIView, ConfigurableViewElement {
     }
     
     func configure(with model: String) {
-        model.styled(font: .boldSystemFont(ofSize: 12), color: .blue).render(target: textLabel)
+        model.styled(.boldSystemFont(ofSize: 12), color: .blue).render(target: textLabel)
     }
 }
 

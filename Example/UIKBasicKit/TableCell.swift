@@ -40,7 +40,7 @@ class BasicTableCellView: UIView, ConfigurableViewElement {
     
     func configure(with model: Int) {
         "Cell \(model)"
-            .styled(font: .boldSystemFont(ofSize: 12), color: .red)
+            .styled(.boldSystemFont(ofSize: 12), color: .red)
             .render(target: titleLabel)
         
         UIImage.randomImages(idx: model).render(on: imageView)
