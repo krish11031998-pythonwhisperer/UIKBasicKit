@@ -53,7 +53,7 @@ public extension ImageSource {
                 img.render(on: obj)
             }
         case .asset(let catalogue, let withTint):
-            var img: UIImage = withTint ? catalogue.image(withTint: .gray) : catalogue.image
+            let img: UIImage = withTint ? catalogue.image(withTint: .gray) : catalogue.image
             if let size {
                 img.resized(size: size).render(on: obj)
             } else {
