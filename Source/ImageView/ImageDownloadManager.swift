@@ -7,18 +7,18 @@
 
 import Foundation
 
-enum ImageError: Swift.Error {
+public enum ImageError: Swift.Error {
     case noImagefromData
     case invalidURL
 }
 
 
-protocol ImageCacheSubscript {
+public protocol ImageCacheSubscript {
     subscript(request: URLRequest) -> UIImage? { get set }
     subscript(urlStr: String) -> UIImage? { get set }
 }
 
-typealias ImageDownloadResult = (Result<UIImage, Error>) -> Void
+public typealias ImageDownloadResult = (Result<UIImage, Error>) -> Void
 
 class ImageDownloadTask {
     let downloadTask: URLSessionDataTask
@@ -39,7 +39,7 @@ class ImageDownloadTask {
 }
 
 //MARK: - ImageCache
-class ImageDownloadManager {
+public class ImageDownloadManager {
     
     
     let dataCache: NSCache<NSURLRequest, UIImage> = {
@@ -57,7 +57,7 @@ class ImageDownloadManager {
 }
 
 //MARK: - ImageCache + requests
-extension ImageDownloadManager {
+public extension ImageDownloadManager {
     
     func loadImage(source: ImageSource, completion: ImageDownloadResult?) {
         switch source {
@@ -167,7 +167,7 @@ extension ImageDownloadManager {
 //MARK: - ImageCache + ImageCacheSubscript
 extension ImageDownloadManager: ImageCacheSubscript {
     
-    subscript(request: URLRequest) -> UIImage? {
+    public subscript(request: URLRequest) -> UIImage? {
         get {
             guard let image = dataCache.object(forKey: request as NSURLRequest) else { return nil }
             return image
@@ -185,7 +185,7 @@ extension ImageDownloadManager: ImageCacheSubscript {
     }
     
     
-    subscript(urlStr: String) -> UIImage? {
+    public subscript(urlStr: String) -> UIImage? {
         get {
             guard let url = URL(string: urlStr) else { return nil }
             return self[URLRequest(url: url)]

@@ -9,7 +9,7 @@ import Foundation
 
 
 //MARK: - CacheableImageContainer
-protocol CacheableImageContainer: UIView {
+public protocol CacheableImageContainer: UIView {
     static var imgURLPropertyKey: UInt8 { get set }
     var imgURL: String? { get set }
     var containerImage: UIImage? { get set }
@@ -18,7 +18,7 @@ protocol CacheableImageContainer: UIView {
     func loadImage(url urlStr: String, size: CGSize?)
 }
 
-extension CacheableImageContainer{
+public extension CacheableImageContainer{
     
     func setImage(img: UIImage) {
         DispatchQueue.main.async {
@@ -66,13 +66,13 @@ extension CacheableImageContainer{
 
 //MARK: - UIImageView+CacheableImageContainer
 extension UIImageView: CacheableImageContainer {
-    static var imgURLPropertyKey: UInt8 = 1
-    var imgURL: String? {
+    public static var imgURLPropertyKey: UInt8 = 1
+    public var imgURL: String? {
         get { objc_getAssociatedObject(self, &Self.imgURLPropertyKey) as? String }
         set { objc_setAssociatedObject(self, &Self.imgURLPropertyKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
     
-    @objc var containerImage: UIImage? {
+    @objc public var containerImage: UIImage? {
         get { image }
         set { self.image = newValue }
     }

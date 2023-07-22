@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 //MARK: - Helpers
-extension UIImage {
+public extension UIImage {
 
     func resized(size newSize: CGSize) -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: newSize)
@@ -83,7 +83,7 @@ extension UIImage {
         
 }
 
-extension UIImage {
+public extension UIImage {
     
     func downsampleImage(to pointSize: CGSize?, scale: CGFloat = UIScreen.main.scale) -> UIImage {
         guard let imgData = pngData(), let pointSize else { return self }
