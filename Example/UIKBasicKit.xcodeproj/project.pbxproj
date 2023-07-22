@@ -353,12 +353,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UIKBasicKit_Example/Pods-UIKBasicKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/UIKBasicKit/UIKBasicKit.framework",
-				"${BUILT_PRODUCTS_DIR}/UIKLayout/UIKLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIKBasicKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIKLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

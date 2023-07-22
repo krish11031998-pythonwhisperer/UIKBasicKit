@@ -1,24 +1,16 @@
 PODS:
-  - UIKBasicKit (0.1.2):
-    - UIKLayout
-  - UIKLayout (0.1.5)
+  - UIKBasicKit (0.1.3)
 
 DEPENDENCIES:
   - UIKBasicKit (from `../`)
-  - UIKLayout
-
-SPEC REPOS:
-  trunk:
-    - UIKLayout
 
 EXTERNAL SOURCES:
   UIKBasicKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UIKBasicKit: e494e0b2b6aeb1985701b657eb696f18cb96a837
-  UIKLayout: cd813fa6868090a5972174b4db868c7322d4225f
+  UIKBasicKit: 7222b9fb80fd71133697f6f9416cd4fb53adde5c
 
-PODFILE CHECKSUM: 8ffc2781e52b98feeefea28ed713c83f1275b2a3
+PODFILE CHECKSUM: 4af3dbd7eb494a2d2af9bc388bae380acf37d884
 
 COCOAPODS: 1.12.1

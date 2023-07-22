@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import UIKLayout
 
 public class CollectionCellBuilder<T: ConfigurableViewElement>: ConfigurableCollectionCell {
     

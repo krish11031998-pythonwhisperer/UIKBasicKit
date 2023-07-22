@@ -6,10 +6,7 @@
 //  Copyright © 2023 CocoaPods. All rights reserved.
 //
 
-import UIKLayout
 import UIKBasicKit
-
-
 //MARK: - CollectionViewTest
 class CollectionViewTest: UIViewController {
     

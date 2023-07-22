@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import UIKLayout
 
 public protocol ConfigurableViewElement: UIView {
     associatedtype Model

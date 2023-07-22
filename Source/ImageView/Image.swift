@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import UIKLayout
 
 //MARK: - Helpers
 extension UIImage {
