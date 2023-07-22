@@ -19,10 +19,10 @@ public protocol Configurable {
     static func cancelPrefetch(with model: Model)
 }
 
-extension Configurable {
+public extension Configurable {
     static var cellName: String? { nil }
-    public static func prefetch(with model: Model) {}
-    public static func cancelPrefetch(with model: Model) {}
+    static func prefetch(with model: Model) {}
+    static func cancelPrefetch(with model: Model) {}
 }
 
 //MARK: - ActionProvider

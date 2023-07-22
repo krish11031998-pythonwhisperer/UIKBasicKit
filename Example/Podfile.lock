@@ -1,5 +1,5 @@
 PODS:
-  - UIKBasicKit (0.1.1):
+  - UIKBasicKit (0.1.2):
     - UIKLayout
   - UIKLayout (0.1.5)
 
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UIKBasicKit: 666b5a90467637e2df4f514e1bb96df1ea7c7a3a
+  UIKBasicKit: e494e0b2b6aeb1985701b657eb696f18cb96a837
   UIKLayout: cd813fa6868090a5972174b4db868c7322d4225f
 
 PODFILE CHECKSUM: 8ffc2781e52b98feeefea28ed713c83f1275b2a3

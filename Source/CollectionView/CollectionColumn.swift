@@ -14,7 +14,7 @@ public protocol CollectionCellDisplay {
     func endDisplay()
 }
 
-extension CollectionCellDisplay {
+public extension CollectionCellDisplay {
     func willDisplay() {}
     func endDisplay() {}
 }
