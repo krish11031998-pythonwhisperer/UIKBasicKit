@@ -22,7 +22,7 @@ pod 'UIKBasicKit'
 
 ## Author
 
-56647167, krishna@getbaraka.com
+Krishna Venkatramani, krish_venkat11@hotmail.com
 
 ## License
 
