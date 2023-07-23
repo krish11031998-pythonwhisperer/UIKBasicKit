@@ -379,7 +379,6 @@
 		E97FBC3DDC9D5B839996710FED5CF3F0 /* UIKBasicKit */ = {
 			isa = PBXGroup;
 			children = (
-				EFB228092A6D5A94007A5962 /* Animation */,
 				5F918BEF43B75B4A60D58B296C7D0AAE /* CollectionView */,
 				A11E317DEEF41F43B4AB4E3EF3CE5AAB /* Color */,
 				4D01CF967C4AE8DC16062931F8842819 /* Common */,
@@ -417,14 +416,6 @@
 				EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */,
 			);
 			path = UIStackView;
-			sourceTree = "<group>";
-		};
-		EFB228092A6D5A94007A5962 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Animation;
-			path = Source/Animation;
 			sourceTree = "<group>";
 		};
 		F52F0C531D9F03B86747D9085DB0017B /* TableView */ = {
