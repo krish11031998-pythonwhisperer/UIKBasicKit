@@ -10,7 +10,7 @@ import Foundation
 public enum ImageSource {
     case remote(url: String)
     case local(img: UIImage)
-    case asset(img: AssetCatalogue, withTint: Bool = false)
+    case asset(img: AssetCatalogue, tintColor: UIColor? = nil)
     case none
 }
 
@@ -33,8 +33,9 @@ extension ImageSource: Codable {
         }
     }
     
-    public init(asset: AssetCatalogue, withTint: Bool = true) {
-        self = .asset(img: asset, withTint: withTint)
+    public init(asset: AssetCatalogue,
+                withTint tintColor: UIColor? = nil) {
+        self = .asset(img: asset, tintColor: tintColor)
     }
 }
 
@@ -52,8 +53,13 @@ public extension ImageSource {
             } else {
                 img.render(on: obj)
             }
-        case .asset(let catalogue, let withTint):
-            let img: UIImage = withTint ? catalogue.image(withTint: .gray) : catalogue.image
+        case .asset(let catalogue, let tint):
+            var img: UIImage
+            if let color = tint {
+                img = catalogue.image(withTint: color)
+            } else {
+                img = catalogue.image
+            }
             if let size {
                 img.resized(size: size).render(on: obj)
             } else {

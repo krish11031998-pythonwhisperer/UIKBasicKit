@@ -11,20 +11,24 @@ import UIKit
 //MARK: - UIView
 public extension UIView {
 
-    static func HStack(subViews: [UIView] = [], spacing: CGFloat, alignment: UIStackView.Alignment = .fill, ignoreInsetsFromSafeArea: Bool = true) -> UIStackView {
+    static func HStack(subViews: [UIView] = [], spacing: CGFloat,
+                       alignment: UIStackView.Alignment = .fill,
+                       insetFromSafeArea: Bool = true) -> UIStackView {
         let stack = UIStackView(arrangedSubviews: subViews)
         stack.spacing = spacing
         stack.alignment = alignment
-        stack.insetsLayoutMarginsFromSafeArea = ignoreInsetsFromSafeArea
+        stack.insetsLayoutMarginsFromSafeArea = insetFromSafeArea
         return stack
     }
     
-    static func VStack(subViews: [UIView] = [], spacing: CGFloat, alignment: UIStackView.Alignment = .fill, ignoreInsetsFromSafeArea: Bool = true) -> UIStackView {
+    static func VStack(subViews: [UIView] = [], spacing: CGFloat,
+                       alignment: UIStackView.Alignment = .fill,
+                       insetFromSafeArea: Bool = true) -> UIStackView {
         let stack = UIStackView(arrangedSubviews: subViews)
         stack.axis = .vertical
         stack.spacing = spacing
         stack.alignment = alignment
-        stack.insetsLayoutMarginsFromSafeArea = ignoreInsetsFromSafeArea
+        stack.insetsLayoutMarginsFromSafeArea = insetFromSafeArea
         return stack
     }
     

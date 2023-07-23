@@ -49,6 +49,7 @@
 		E8EA941DE7951CAEA0F19C77B8026E64 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C00748FCFA051B0DFD6BD6C125BAD /* AppColor.swift */; };
 		EF95E7112A6BD6910058D1A9 /* ViewHeiarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */; };
 		EF95E7132A6C0BCD0058D1A9 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */; };
+		EFB228082A6D50A0007A5962 /* Fundamentals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB228072A6D50A0007A5962 /* Fundamentals.swift */; };
 		F454CD1E4ED80DCE4A6E8C69FA459E84 /* UIKBasicKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F2BC5DB76A3E4E11A803CEAA2303 /* UIKBasicKit-dummy.m */; };
 		F52BD1FC041583D7D26FCB678A8727B1 /* UIView+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06B48B332AEF95DE93113A4DD99D09 /* UIView+Styling.swift */; };
 		F5CF7B4D04DD023D6B3B8D6D14D86D38 /* CollectionViewFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7D956E672D1197BCC26B572E381D0 /* CollectionViewFunctions.swift */; };
@@ -145,6 +146,7 @@
 		EF89DA0A7028F8C90D43C6A87CF4FC18 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeiarchy.swift; sourceTree = "<group>"; };
 		EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		EFB228072A6D50A0007A5962 /* Fundamentals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundamentals.swift; sourceTree = "<group>"; };
 		F2917F1CB9385F809262CD31695B59E6 /* UIView+Gesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Gesture.swift"; sourceTree = "<group>"; };
 		F74C00748FCFA051B0DFD6BD6C125BAD /* AppColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		FB653A54D51A15E1AAAE3063B30A0358 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		3F329C87BEBF0FB26CFF4BD975FBC31F /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				EFB228062A6D5030007A5962 /* UIStackView */,
 				EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */,
 				C08918D78C079492BBBB8BF78246B9FE /* UIView+Array.swift */,
 				27DECD8467D6EC295FD790954E4EC4FC /* UIView+Builders.swift */,
@@ -203,7 +206,6 @@
 				627925C1698F3817E2EE43A52D86A5B1 /* UIView+GraphicRenderer.swift */,
 				307649EF5517486C26AC07C24513B230 /* UIView+Helpers.swift */,
 				1D06B48B332AEF95DE93113A4DD99D09 /* UIView+Styling.swift */,
-				EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */,
 			);
 			name = UIView;
 			path = Source/UIView;
@@ -240,8 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				7F41522A105589F3D526D28117A50019 /* Configurable.swift */,
-				E9BD75E5B6A52255769D3AE6188629B2 /* StackView.swift */,
 				21014F6AB5F9B49C571359842F9C8475 /* UILabel.swift */,
+				EFB228072A6D50A0007A5962 /* Fundamentals.swift */,
 			);
 			name = Common;
 			path = Source/Common;
@@ -377,6 +379,7 @@
 		E97FBC3DDC9D5B839996710FED5CF3F0 /* UIKBasicKit */ = {
 			isa = PBXGroup;
 			children = (
+				EFB228092A6D5A94007A5962 /* Animation */,
 				5F918BEF43B75B4A60D58B296C7D0AAE /* CollectionView */,
 				A11E317DEEF41F43B4AB4E3EF3CE5AAB /* Color */,
 				4D01CF967C4AE8DC16062931F8842819 /* Common */,
@@ -405,6 +408,23 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/UIKBasicKit";
+			sourceTree = "<group>";
+		};
+		EFB228062A6D5030007A5962 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				E9BD75E5B6A52255769D3AE6188629B2 /* StackView.swift */,
+				EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */,
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		EFB228092A6D5A94007A5962 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Animation;
+			path = Source/Animation;
 			sourceTree = "<group>";
 		};
 		F52F0C531D9F03B86747D9085DB0017B /* TableView */ = {
@@ -574,6 +594,7 @@
 				218A5C8100456E3A8A650A3D0E0C1969 /* CGSize.swift in Sources */,
 				8C9B4A8E707C3F277774B4845E21A2F8 /* CollectionCellBuilder.swift in Sources */,
 				B7908DFFBB0A2B0CCD62A2D62416E77B /* CollectionColumn.swift in Sources */,
+				EFB228082A6D50A0007A5962 /* Fundamentals.swift in Sources */,
 				24C5DFE1793A868942E911BD4833C40D /* CollectionCompositionalSupplementaryViews.swift in Sources */,
 				31B874B84C95B4FA24205BE8873074E0 /* CollectionDataSource.swift in Sources */,
 				40098EA6A77A9BC7CE126AC8B4ECAD4D /* CollectionSection.swift in Sources */,
