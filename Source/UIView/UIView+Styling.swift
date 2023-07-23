@@ -77,7 +77,7 @@ public extension UIView {
 
 
 //MARK: - UIView+Shadow
-extension UIView {
+public extension UIView {
     
     enum ShadowType {
         case small, medium, large, highlight

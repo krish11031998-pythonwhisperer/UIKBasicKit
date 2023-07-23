@@ -20,6 +20,7 @@ public extension UIView {
     func tapGesture(numberOfTouches: Int = 1, cancelsTouchesInView: Bool = false, handler: @escaping Callback) {
         tapGestureHandler = handler
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGestureRecognizerHandler))
+        self.isUserInteractionEnabled = true
         tapGesture.numberOfTapsRequired = numberOfTouches
         tapGesture.cancelsTouchesInView = cancelsTouchesInView
         addGestureRecognizer(tapGesture)
