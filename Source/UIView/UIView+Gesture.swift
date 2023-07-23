@@ -48,6 +48,7 @@ public extension UIView {
                       handler: @escaping Callback) {
         swipeGestureHandler = handler
         let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureRecognizerHandler))
+        self.isUserInteractionEnabled = true
         swipe.direction = direction
         swipe.cancelsTouchesInView = cancelsTouchesInView
         addGestureRecognizer(swipe)
