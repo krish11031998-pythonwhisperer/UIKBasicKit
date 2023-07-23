@@ -13,6 +13,17 @@ public extension UIApplication {
 	static var main: UIApplication? { UIApplication.value(forKeyPath: #keyPath(UIApplication.shared)) as? UIApplication }
 }
 
+//MARK: - App Padding
+public protocol AppPadding {
+    static var appHorizontalPadding: CGFloat { get }
+    static var appVerticalPadding: CGFloat { get }
+}
+
+public extension AppPadding {
+    static var appHorizontalPadding: CGFloat { 16 }
+    static var appVerticalPadding: CGFloat { 10 }
+}
+
 public extension CGFloat {
 	
 	static var totalWidth: CGFloat { UIScreen.main.bounds.width }
@@ -36,11 +47,10 @@ public extension CGFloat {
     var magnitude: CGFloat {
         abs(self)
     }
-    
-    static var appHorizontalPadding: CGFloat { 16 }
-    static var appVerticalPadding: CGFloat { 10 }
+
 }
 
+extension CGFloat: AppPadding {}
 
 //MARK: - CGFloat + ClosedRange
 public extension ClosedRange where Bound == CGFloat {

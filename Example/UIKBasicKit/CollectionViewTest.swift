@@ -8,6 +8,12 @@
 
 import UIKBasicKit
 //MARK: - CollectionViewTest
+
+extension CGFloat: AppPadding {
+    static public var appVerticalPadding: CGFloat { 8 }
+    static public var appHorizontalPadding: CGFloat { 8 }
+}
+
 class CollectionViewTest: UIViewController {
     
     private lazy var collectionView: UICollectionView = { .init(frame: .zero, collectionViewLayout: .init() ) }()
@@ -70,8 +76,8 @@ class CollectionViewTest: UIViewController {
         
         let section = NSCollectionLayoutSection.twoByTwoGrid(.absolute(250),
                                                              spacing: 10,
-                                                             interItemSpacing: 10,
-                                                             insets: .init(vertical: 0, horizontal: 16))
+                                                             interItemSpacing: .appHorizontalPadding,
+                                                             insets: .init(vertical: 0, horizontal: .appHorizontalPadding))
         return .init(cell: cells, layout: section)
     }
 }
