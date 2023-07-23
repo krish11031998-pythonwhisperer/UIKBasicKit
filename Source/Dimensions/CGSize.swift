@@ -23,6 +23,9 @@ public extension CGSize {
 	var bounds: CGRect { .init(origin: .zero, size: self) }
     
     var smallDim: CGFloat { min(width,height) }
+    
+    var largeDim: CGFloat { max(width,height) }
+    
 	/// size: 32px square
 	static var smallestSquare: CGSize  { .init(squared: 32) }
     

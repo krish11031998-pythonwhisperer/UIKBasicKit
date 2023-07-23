@@ -33,7 +33,10 @@ public extension UIEdgeInsets {
 //MARK: - UIEdgeInset Constants
 public extension UIEdgeInsets {
     
-    static let tweetCellInsets: UIEdgeInsets = .init(by: 15)
+    static let sheetInsets: UIEdgeInsets = .init(top: .appHorizontalPadding,
+                                                 left: .appHorizontalPadding,
+                                                 bottom: max(.appHorizontalPadding,.safeAreaInsets.bottom + 10),
+                                                 right: .appHorizontalPadding)
 }
 
 //MARK: - NSDirectionEdgeInsets
