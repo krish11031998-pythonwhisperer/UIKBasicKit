@@ -41,9 +41,10 @@ public extension Publisher {
     func sinkReceive(displayAlert: UIViewController?, handle: PassthroughSubject<Void, Never>? = nil, _ receiveCompletion: @escaping (Self.Output) -> Void) -> AnyCancellable {
         self
             .receive(on: DispatchQueue.main)
-            .sink { [weak displayAlert] in
+            .sink { //[weak displayAlert] in
                 if let err = $0.err?.localizedDescription {
-//                    displayAlert?.showAlert(title: "Error", body: err, buttonText: "Ok", handle: handle)
+                    //displayAlert?.showAlert(title: "Error", body: err, buttonText: "Ok", handle: handle)
+                    Swift.print("(ERROR) err: ", err)
                 }
             } receiveValue: { receiveCompletion($0) }
 
