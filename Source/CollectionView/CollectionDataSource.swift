@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+public typealias BoundaryItems = [NSCollectionLayoutBoundarySupplementaryItem]
+
 public class CollectionDataSource: NSObject {
     let sections: [CollectionSection]
     let headers: [NSCollectionLayoutBoundarySupplementaryItem]?
@@ -15,15 +17,26 @@ public class CollectionDataSource: NSObject {
     let compositionalLayout: Bool
     
     public init(sections: [CollectionSection],
-         headers: [NSCollectionLayoutBoundarySupplementaryItem]? = nil,
-         footer: [NSCollectionLayoutBoundarySupplementaryItem]? = nil,
-         compositionalLayout: Bool = false
+                headers: BoundaryItems? = nil,
+                footer: BoundaryItems? = nil,
+                compositionalLayout: Bool = false
     ) {
         self.sections = sections
         self.headers = headers
         self.footer = footer
         self.compositionalLayout = compositionalLayout
     }
+    
+    public lazy var indexPaths: [IndexPath] = {
+        var paths = [IndexPath]()
+        sections.enumerated().forEach { section in
+            section.element.cell.enumerated().forEach { row in
+                paths.append(.init(row: row.offset, section: section.offset))
+            }
+        }
+        
+        return paths
+    }()
 }
 
 extension CollectionDataSource: UICollectionViewDataSource {

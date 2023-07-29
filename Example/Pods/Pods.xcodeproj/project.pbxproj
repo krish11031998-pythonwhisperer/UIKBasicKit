@@ -47,9 +47,28 @@
 		D552463739F5B61E8EA46364D87B17BB /* UIView+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8DDC7108B888208BCECA879BF5783 /* UIView+General.swift */; };
 		E3D83E60666E56ECDA833AE0FC590D41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E8EA941DE7951CAEA0F19C77B8026E64 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C00748FCFA051B0DFD6BD6C125BAD /* AppColor.swift */; };
+		EF5CBE8E2A7282AD0098F0B4 /* UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBE8D2A7282AD0098F0B4 /* UITabBar.swift */; };
+		EF5CBEAD2A75163A0098F0B4 /* SwipableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA32A75163A0098F0B4 /* SwipableViewController.swift */; };
+		EF5CBEAE2A75163A0098F0B4 /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA42A75163A0098F0B4 /* UIViewController+Utilities.swift */; };
+		EF5CBEAF2A75163A0098F0B4 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA62A75163A0098F0B4 /* PresentationController.swift */; };
+		EF5CBEB02A75163A0098F0B4 /* MatchedGeometryPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA72A75163A0098F0B4 /* MatchedGeometryPresentation.swift */; };
+		EF5CBEB12A75163A0098F0B4 /* UIViewController+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA82A75163A0098F0B4 /* UIViewController+Presentation.swift */; };
+		EF5CBEB22A75163A0098F0B4 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA92A75163A0098F0B4 /* PresentationStyle.swift */; };
+		EF5CBEB32A75163A0098F0B4 /* DualLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEAC2A75163A0098F0B4 /* DualLabel.swift */; };
 		EF95E7112A6BD6910058D1A9 /* ViewHeiarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */; };
 		EF95E7132A6C0BCD0058D1A9 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */; };
 		EFB228082A6D50A0007A5962 /* Fundamentals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB228072A6D50A0007A5962 /* Fundamentals.swift */; };
+		EFCCD8962A723A01007F038F /* GenericResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD88C2A723A01007F038F /* GenericResult.swift */; };
+		EFCCD8972A723A01007F038F /* SubscriberHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD88E2A723A01007F038F /* SubscriberHelpers.swift */; };
+		EFCCD8982A723A01007F038F /* UIControl+Publishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8902A723A01007F038F /* UIControl+Publishers.swift */; };
+		EFCCD8992A723A01007F038F /* CommonPublishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8912A723A01007F038F /* CommonPublishers.swift */; };
+		EFCCD89A2A723A01007F038F /* UIButton+Publishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8922A723A01007F038F /* UIButton+Publishers.swift */; };
+		EFCCD89B2A723A01007F038F /* withLatestFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8932A723A01007F038F /* withLatestFrom.swift */; };
+		EFCCD89C2A723A01007F038F /* UITextField+Publishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8942A723A01007F038F /* UITextField+Publishers.swift */; };
+		EFCCD89D2A723A01007F038F /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8952A723A01007F038F /* PublisherExtension.swift */; };
+		EFCCD8A02A723A44007F038F /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD89E2A723A44007F038F /* Animation.swift */; };
+		EFCCD8A12A723A44007F038F /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD89F2A723A44007F038F /* CALayer+Animation.swift */; };
+		EFCCD8A32A723B9F007F038F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8A22A723B9F007F038F /* UIViewController.swift */; };
 		F454CD1E4ED80DCE4A6E8C69FA459E84 /* UIKBasicKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F2BC5DB76A3E4E11A803CEAA2303 /* UIKBasicKit-dummy.m */; };
 		F52BD1FC041583D7D26FCB678A8727B1 /* UIView+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06B48B332AEF95DE93113A4DD99D09 /* UIView+Styling.swift */; };
 		F5CF7B4D04DD023D6B3B8D6D14D86D38 /* CollectionViewFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7D956E672D1197BCC26B572E381D0 /* CollectionViewFunctions.swift */; };
@@ -143,10 +162,29 @@
 		DD38699BA436628F2CC59D0B607CF087 /* TableCellBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableCellBuilder.swift; sourceTree = "<group>"; };
 		E5BBFADF9E8304AB10168C46B31FAC2D /* UIKBasicKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIKBasicKit-Info.plist"; sourceTree = "<group>"; };
 		E9BD75E5B6A52255769D3AE6188629B2 /* StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		EF5CBE8D2A7282AD0098F0B4 /* UITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBar.swift; sourceTree = "<group>"; };
+		EF5CBEA32A75163A0098F0B4 /* SwipableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipableViewController.swift; sourceTree = "<group>"; };
+		EF5CBEA42A75163A0098F0B4 /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utilities.swift"; sourceTree = "<group>"; };
+		EF5CBEA62A75163A0098F0B4 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		EF5CBEA72A75163A0098F0B4 /* MatchedGeometryPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedGeometryPresentation.swift; sourceTree = "<group>"; };
+		EF5CBEA82A75163A0098F0B4 /* UIViewController+Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentation.swift"; sourceTree = "<group>"; };
+		EF5CBEA92A75163A0098F0B4 /* PresentationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationStyle.swift; sourceTree = "<group>"; };
+		EF5CBEAC2A75163A0098F0B4 /* DualLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualLabel.swift; sourceTree = "<group>"; };
 		EF89DA0A7028F8C90D43C6A87CF4FC18 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeiarchy.swift; sourceTree = "<group>"; };
 		EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		EFB228072A6D50A0007A5962 /* Fundamentals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundamentals.swift; sourceTree = "<group>"; };
+		EFCCD88C2A723A01007F038F /* GenericResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericResult.swift; sourceTree = "<group>"; };
+		EFCCD88E2A723A01007F038F /* SubscriberHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriberHelpers.swift; sourceTree = "<group>"; };
+		EFCCD8902A723A01007F038F /* UIControl+Publishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Publishers.swift"; sourceTree = "<group>"; };
+		EFCCD8912A723A01007F038F /* CommonPublishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPublishers.swift; sourceTree = "<group>"; };
+		EFCCD8922A723A01007F038F /* UIButton+Publishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Publishers.swift"; sourceTree = "<group>"; };
+		EFCCD8932A723A01007F038F /* withLatestFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = withLatestFrom.swift; sourceTree = "<group>"; };
+		EFCCD8942A723A01007F038F /* UITextField+Publishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Publishers.swift"; sourceTree = "<group>"; };
+		EFCCD8952A723A01007F038F /* PublisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
+		EFCCD89E2A723A44007F038F /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		EFCCD89F2A723A44007F038F /* CALayer+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
+		EFCCD8A22A723B9F007F038F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F2917F1CB9385F809262CD31695B59E6 /* UIView+Gesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Gesture.swift"; sourceTree = "<group>"; };
 		F74C00748FCFA051B0DFD6BD6C125BAD /* AppColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		FB653A54D51A15E1AAAE3063B30A0358 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -244,6 +282,8 @@
 				7F41522A105589F3D526D28117A50019 /* Configurable.swift */,
 				21014F6AB5F9B49C571359842F9C8475 /* UILabel.swift */,
 				EFB228072A6D50A0007A5962 /* Fundamentals.swift */,
+				EFCCD8A22A723B9F007F038F /* UIViewController.swift */,
+				EF5CBE8D2A7282AD0098F0B4 /* UITabBar.swift */,
 			);
 			name = Common;
 			path = Source/Common;
@@ -379,6 +419,11 @@
 		E97FBC3DDC9D5B839996710FED5CF3F0 /* UIKBasicKit */ = {
 			isa = PBXGroup;
 			children = (
+				EF5CBEAA2A75163A0098F0B4 /* Components */,
+				EF5CBEA52A75163A0098F0B4 /* Presentation */,
+				EF5CBEA22A75163A0098F0B4 /* UIViewController */,
+				EFCCD88B2A723A01007F038F /* CombineExtension */,
+				EFCCD88A2A7239E5007F038F /* Animation */,
 				5F918BEF43B75B4A60D58B296C7D0AAE /* CollectionView */,
 				A11E317DEEF41F43B4AB4E3EF3CE5AAB /* Color */,
 				4D01CF967C4AE8DC16062931F8842819 /* Common */,
@@ -409,6 +454,45 @@
 			path = "Example/Pods/Target Support Files/UIKBasicKit";
 			sourceTree = "<group>";
 		};
+		EF5CBEA22A75163A0098F0B4 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CBEA32A75163A0098F0B4 /* SwipableViewController.swift */,
+				EF5CBEA42A75163A0098F0B4 /* UIViewController+Utilities.swift */,
+			);
+			name = UIViewController;
+			path = Source/UIViewController;
+			sourceTree = "<group>";
+		};
+		EF5CBEA52A75163A0098F0B4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CBEA62A75163A0098F0B4 /* PresentationController.swift */,
+				EF5CBEA72A75163A0098F0B4 /* MatchedGeometryPresentation.swift */,
+				EF5CBEA82A75163A0098F0B4 /* UIViewController+Presentation.swift */,
+				EF5CBEA92A75163A0098F0B4 /* PresentationStyle.swift */,
+			);
+			name = Presentation;
+			path = Source/Presentation;
+			sourceTree = "<group>";
+		};
+		EF5CBEAA2A75163A0098F0B4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CBEAB2A75163A0098F0B4 /* TextComponents */,
+			);
+			name = Components;
+			path = Source/Components;
+			sourceTree = "<group>";
+		};
+		EF5CBEAB2A75163A0098F0B4 /* TextComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CBEAC2A75163A0098F0B4 /* DualLabel.swift */,
+			);
+			path = TextComponents;
+			sourceTree = "<group>";
+		};
 		EFB228062A6D5030007A5962 /* UIStackView */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +500,48 @@
 				EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */,
 			);
 			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		EFCCD88A2A7239E5007F038F /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				EFCCD89E2A723A44007F038F /* Animation.swift */,
+				EFCCD89F2A723A44007F038F /* CALayer+Animation.swift */,
+			);
+			name = Animation;
+			path = Source/Animation;
+			sourceTree = "<group>";
+		};
+		EFCCD88B2A723A01007F038F /* CombineExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EFCCD88C2A723A01007F038F /* GenericResult.swift */,
+				EFCCD88D2A723A01007F038F /* SubscriberHelpers */,
+				EFCCD88F2A723A01007F038F /* PublisherHelpers */,
+			);
+			name = CombineExtension;
+			path = Source/CombineExtension;
+			sourceTree = "<group>";
+		};
+		EFCCD88D2A723A01007F038F /* SubscriberHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFCCD88E2A723A01007F038F /* SubscriberHelpers.swift */,
+			);
+			path = SubscriberHelpers;
+			sourceTree = "<group>";
+		};
+		EFCCD88F2A723A01007F038F /* PublisherHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFCCD8902A723A01007F038F /* UIControl+Publishers.swift */,
+				EFCCD8912A723A01007F038F /* CommonPublishers.swift */,
+				EFCCD8922A723A01007F038F /* UIButton+Publishers.swift */,
+				EFCCD8932A723A01007F038F /* withLatestFrom.swift */,
+				EFCCD8942A723A01007F038F /* UITextField+Publishers.swift */,
+				EFCCD8952A723A01007F038F /* PublisherExtension.swift */,
+			);
+			path = PublisherHelpers;
 			sourceTree = "<group>";
 		};
 		F52F0C531D9F03B86747D9085DB0017B /* TableView */ = {
@@ -577,14 +703,20 @@
 			files = (
 				E8EA941DE7951CAEA0F19C77B8026E64 /* AppColor.swift in Sources */,
 				C65EFBA49CDEDD5F61F68D52DEABA613 /* AssetCatalogue.swift in Sources */,
+				EFCCD8972A723A01007F038F /* SubscriberHelpers.swift in Sources */,
+				EF5CBEB12A75163A0098F0B4 /* UIViewController+Presentation.swift in Sources */,
 				526F0A968F08EAC74C12EEA05BAB02C8 /* CacheableImageContainer.swift in Sources */,
 				99ACFCCB034D878384FAA2865D8472F6 /* CGFloat.swift in Sources */,
 				9CE796F3406D181F0D84E392BFD6994D /* CGPoint.swift in Sources */,
+				EF5CBEAE2A75163A0098F0B4 /* UIViewController+Utilities.swift in Sources */,
 				EF95E7112A6BD6910058D1A9 /* ViewHeiarchy.swift in Sources */,
 				7D1D7B7C0B3B93EB7C768239B79DDA77 /* CGRect.swift in Sources */,
 				218A5C8100456E3A8A650A3D0E0C1969 /* CGSize.swift in Sources */,
+				EF5CBE8E2A7282AD0098F0B4 /* UITabBar.swift in Sources */,
+				EFCCD8962A723A01007F038F /* GenericResult.swift in Sources */,
 				8C9B4A8E707C3F277774B4845E21A2F8 /* CollectionCellBuilder.swift in Sources */,
 				B7908DFFBB0A2B0CCD62A2D62416E77B /* CollectionColumn.swift in Sources */,
+				EFCCD89C2A723A01007F038F /* UITextField+Publishers.swift in Sources */,
 				EFB228082A6D50A0007A5962 /* Fundamentals.swift in Sources */,
 				24C5DFE1793A868942E911BD4833C40D /* CollectionCompositionalSupplementaryViews.swift in Sources */,
 				31B874B84C95B4FA24205BE8873074E0 /* CollectionDataSource.swift in Sources */,
@@ -593,27 +725,40 @@
 				7443F815873C5CF8FF424DF6214202F1 /* CollectionViewLayout.swift in Sources */,
 				D37290356C339A5DA9E04F5ABC5BAE9A /* Configurable.swift in Sources */,
 				EF95E7132A6C0BCD0058D1A9 /* UIStackView.swift in Sources */,
+				EF5CBEAF2A75163A0098F0B4 /* PresentationController.swift in Sources */,
+				EF5CBEAD2A75163A0098F0B4 /* SwipableViewController.swift in Sources */,
 				6AD1844F104DC450B2D58E403DEF8179 /* ConfigurableHeaderOrFooter.swift in Sources */,
 				B0B45C83D09CACA785E0F4B920BE348F /* CustomFonts.swift in Sources */,
 				343E87533C3225EEC65B732DA31AEE38 /* Image.swift in Sources */,
+				EFCCD8A02A723A44007F038F /* Animation.swift in Sources */,
 				05D19228FFC1C6387625DEDE177A7677 /* ImageDownloadManager.swift in Sources */,
 				A6E235B3DBAB658E83A695236191CB50 /* ImageSource.swift in Sources */,
 				A6701F9F5387BCB8B32E0C58FEF2E84F /* Int.swift in Sources */,
 				A740E1EFA2DF3F1C5994B7E03886BE37 /* NSAttributedString+Utils.swift in Sources */,
 				F6EDAF03C92012DAACD2CDB683A781BF /* RenderableText.swift in Sources */,
 				FA86B836E323C788C1CF4EB466685B05 /* StackView.swift in Sources */,
+				EFCCD8A12A723A44007F038F /* CALayer+Animation.swift in Sources */,
+				EFCCD8992A723A01007F038F /* CommonPublishers.swift in Sources */,
+				EFCCD89D2A723A01007F038F /* PublisherExtension.swift in Sources */,
 				5A744E3EF4FC2B8439FDA748320E2EDF /* TableCellBuilder.swift in Sources */,
 				FFB7A4D3E67711C16A38C4905E6B77D5 /* TableRow.swift in Sources */,
 				646972A0D517156303579B000E1ECCD1 /* TableSection.swift in Sources */,
+				EFCCD8982A723A01007F038F /* UIControl+Publishers.swift in Sources */,
 				B65C7785CF7B9031B1F29F5A1B29A465 /* TableViewDataSource.swift in Sources */,
+				EFCCD8A32A723B9F007F038F /* UIViewController.swift in Sources */,
 				247D9D22D8B651156F08E83B4D295A87 /* TableViewFunction.swift in Sources */,
 				7CCA86D5802425E88D5FB5CB4E5FEC4C /* UIEdgeInsets.swift in Sources */,
+				EF5CBEB32A75163A0098F0B4 /* DualLabel.swift in Sources */,
+				EF5CBEB22A75163A0098F0B4 /* PresentationStyle.swift in Sources */,
 				F454CD1E4ED80DCE4A6E8C69FA459E84 /* UIKBasicKit-dummy.m in Sources */,
 				4E5BB5FB7F3E740E02A2FA45BF32FBC3 /* UILabel.swift in Sources */,
+				EFCCD89B2A723A01007F038F /* withLatestFrom.swift in Sources */,
 				352966CFF2E8F3BBF7679D07DDC7A666 /* UIView+Array.swift in Sources */,
 				17D51FB71113785C403285F4C0BC8AC9 /* UIView+Builders.swift in Sources */,
 				D552463739F5B61E8EA46364D87B17BB /* UIView+General.swift in Sources */,
+				EFCCD89A2A723A01007F038F /* UIButton+Publishers.swift in Sources */,
 				AFC908DE237A30FE3B69E3C6B1CD23E5 /* UIView+Gesture.swift in Sources */,
+				EF5CBEB02A75163A0098F0B4 /* MatchedGeometryPresentation.swift in Sources */,
 				4E3B1119B626E06DB436622EABF5147F /* UIView+GraphicRenderer.swift in Sources */,
 				C72B7B68EE718CBD16C620DA625A2B75 /* UIView+Helpers.swift in Sources */,
 				F52BD1FC041583D7D26FCB678A8727B1 /* UIView+Styling.swift in Sources */,

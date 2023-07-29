@@ -20,8 +20,8 @@ public protocol AppPadding {
 }
 
 public extension AppPadding {
-    static var appHorizontalPadding: CGFloat { 16 }
-    static var appVerticalPadding: CGFloat { 10 }
+    static var appHorizontalPadding: CGFloat { 24 }
+    static var appVerticalPadding: CGFloat { 16 }
 }
 
 public extension CGFloat {

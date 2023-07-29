@@ -33,9 +33,9 @@ public extension UIEdgeInsets {
 //MARK: - UIEdgeInset Constants
 public extension UIEdgeInsets {
     
-    static let sheetInsets: UIEdgeInsets = .init(top: .appHorizontalPadding,
+    static let sheetInsets: UIEdgeInsets = .init(top: .appVerticalPadding,
                                                  left: .appHorizontalPadding,
-                                                 bottom: max(.appHorizontalPadding,.safeAreaInsets.bottom + 10),
+                                                 bottom: .safeAreaInsets.bottom,
                                                  right: .appHorizontalPadding)
 }
 
