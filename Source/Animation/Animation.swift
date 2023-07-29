@@ -22,7 +22,11 @@ public enum AnimationState {
 
 public enum Animation {
     //MARK: Slide
-	case slideInFromTop(from: CGFloat, to:CGFloat = 0, duration: CFTimeInterval = 0.3)
+    case slideInFromTop(from: CGFloat,
+                        to:CGFloat = 0,
+                        opacityFrom: CGFloat = 0,
+                        opacityTo: CGFloat = 1,
+                        duration: CFTimeInterval = 0.3)
     case slide(_ direction: AnimationDirection, state: AnimationState = .in, additionalOff: CGFloat = 0, duration: CFTimeInterval = 0.3)
     case transformX(by: CGFloat, duration: CFTimeInterval = 0.3)
 
@@ -51,20 +55,20 @@ public extension Animation {
             animation.keyTimes = [0, 0.33, 0.66, 1]
             animation.values = [1, 0.975, 0.975, 1]
             return animation
-		case .slideInFromTop(let from, let to, let duration):
-			let animation = CABasicAnimation(keyPath: "position.y")
-			animation.fromValue = from
-			animation.toValue = to
+        case .slideInFromTop(let from, let to, let opacityFrom, let opacityTo, let duration):
+            let animation = CABasicAnimation(keyPath: "position.y")
+            animation.fromValue = from
+            animation.toValue = to
 
-			let opacity = CABasicAnimation(keyPath: "opacity")
-			opacity.fromValue = 0
-			opacity.toValue = 1
-			
-			let group = CAAnimationGroup()
-			group.animations = [animation, opacity]
-			group.duration = duration
-			
-			return group
+            let opacity = CABasicAnimation(keyPath: "opacity")
+            opacity.fromValue = opacityFrom
+            opacity.toValue = opacityTo
+            
+            let group = CAAnimationGroup()
+            group.animations = [animation, opacity]
+            group.duration = duration
+            
+            return group
         case .slide(let direction, let state, let additionalOff, let  duration):
             let animation = CABasicAnimation(keyPath: "position.y")
 
