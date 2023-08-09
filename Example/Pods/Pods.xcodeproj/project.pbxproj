@@ -55,6 +55,7 @@
 		EF5CBEB12A75163A0098F0B4 /* UIViewController+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA82A75163A0098F0B4 /* UIViewController+Presentation.swift */; };
 		EF5CBEB22A75163A0098F0B4 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEA92A75163A0098F0B4 /* PresentationStyle.swift */; };
 		EF5CBEB32A75163A0098F0B4 /* DualLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CBEAC2A75163A0098F0B4 /* DualLabel.swift */; };
+		EF5FB3852A844D11002F2CA5 /* ExpandableSheetPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5FB3842A844D11002F2CA5 /* ExpandableSheetPresentation.swift */; };
 		EF95E7112A6BD6910058D1A9 /* ViewHeiarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */; };
 		EF95E7132A6C0BCD0058D1A9 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */; };
 		EFB228082A6D50A0007A5962 /* Fundamentals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB228072A6D50A0007A5962 /* Fundamentals.swift */; };
@@ -170,6 +171,7 @@
 		EF5CBEA82A75163A0098F0B4 /* UIViewController+Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentation.swift"; sourceTree = "<group>"; };
 		EF5CBEA92A75163A0098F0B4 /* PresentationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationStyle.swift; sourceTree = "<group>"; };
 		EF5CBEAC2A75163A0098F0B4 /* DualLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualLabel.swift; sourceTree = "<group>"; };
+		EF5FB3842A844D11002F2CA5 /* ExpandableSheetPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableSheetPresentation.swift; sourceTree = "<group>"; };
 		EF89DA0A7028F8C90D43C6A87CF4FC18 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		EF95E7102A6BD6910058D1A9 /* ViewHeiarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeiarchy.swift; sourceTree = "<group>"; };
 		EF95E7122A6C0BCD0058D1A9 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
@@ -471,6 +473,7 @@
 				EF5CBEA72A75163A0098F0B4 /* MatchedGeometryPresentation.swift */,
 				EF5CBEA82A75163A0098F0B4 /* UIViewController+Presentation.swift */,
 				EF5CBEA92A75163A0098F0B4 /* PresentationStyle.swift */,
+				EF5FB3842A844D11002F2CA5 /* ExpandableSheetPresentation.swift */,
 			);
 			name = Presentation;
 			path = Source/Presentation;
@@ -722,6 +725,7 @@
 				31B874B84C95B4FA24205BE8873074E0 /* CollectionDataSource.swift in Sources */,
 				40098EA6A77A9BC7CE126AC8B4ECAD4D /* CollectionSection.swift in Sources */,
 				F5CF7B4D04DD023D6B3B8D6D14D86D38 /* CollectionViewFunctions.swift in Sources */,
+				EF5FB3852A844D11002F2CA5 /* ExpandableSheetPresentation.swift in Sources */,
 				7443F815873C5CF8FF424DF6214202F1 /* CollectionViewLayout.swift in Sources */,
 				D37290356C339A5DA9E04F5ABC5BAE9A /* Configurable.swift in Sources */,
 				EF95E7132A6C0BCD0058D1A9 /* UIStackView.swift in Sources */,

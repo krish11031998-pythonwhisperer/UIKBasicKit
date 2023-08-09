@@ -29,7 +29,9 @@ public extension UIView {
     func pinTopAnchorTo(_ view: UIView? = nil, anchor: KeyPath<UIView,YAnchor> = \.topAnchor, constant: CGFloat) -> UIView {
         guard let viewToPinTo = view ?? superview else { return self }
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.topAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: constant).isActive = true
+        let constraint = self.topAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: constant)
+        removeSimilarConstraints([constraint])
+        NSLayoutConstraint.activate([constraint])
         return self
     }
     
@@ -37,7 +39,9 @@ public extension UIView {
     func pinBottomAnchorTo(_ view: UIView? = nil, anchor: KeyPath<UIView,YAnchor> = \.bottomAnchor, constant: CGFloat) -> UIView {
         guard let viewToPinTo = view ?? superview else { return self }
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.bottomAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant).isActive = true
+        let constraint = self.bottomAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant)
+        removeSimilarConstraints([constraint])
+        NSLayoutConstraint.activate([constraint])
         return self
     }
     
@@ -45,7 +49,9 @@ public extension UIView {
     func pinLeadingAnchorTo(_ view: UIView? = nil, anchor: KeyPath<UIView,XAnchor> = \.leadingAnchor, constant: CGFloat) -> UIView {
         guard let viewToPinTo = view ?? superview else { return self }
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.leadingAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: constant).isActive = true
+        let constraint = self.leadingAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: constant)
+        removeSimilarConstraints([constraint])
+        NSLayoutConstraint.activate([constraint])
         return self
     }
     
@@ -53,7 +59,9 @@ public extension UIView {
     func pinTrailingAnchorTo(_ view: UIView? = nil, anchor: KeyPath<UIView,XAnchor> = \.trailingAnchor, constant: CGFloat) -> UIView {
         guard let viewToPinTo = view ?? superview else { return self }
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.trailingAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant).isActive = true
+        let constraint = self.trailingAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant)
+        removeSimilarConstraints([constraint])
+        NSLayoutConstraint.activate([constraint])
         return self
     }
     
@@ -61,7 +69,9 @@ public extension UIView {
     func pinCenterXAnchorTo(_ view: UIView? = nil, anchor: KeyPath<UIView,XAnchor> = \.centerXAnchor, constant: CGFloat) -> UIView {
         guard let viewToPinTo = view ?? superview else { return self }
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.centerXAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant).isActive = true
+        let constraint = self.centerXAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant)
+        removeSimilarConstraints([constraint])
+        NSLayoutConstraint.activate([constraint])
         return self
     }
     
@@ -69,7 +79,9 @@ public extension UIView {
     func pinCenterYAnchorTo(_ view: UIView? = nil, anchor: KeyPath<UIView,YAnchor> = \.centerYAnchor, constant: CGFloat) -> UIView {
         guard let viewToPinTo = view ?? superview else { return self }
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.centerYAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant).isActive = true
+        let constraint = self.centerYAnchor.constraint(equalTo: viewToPinTo[keyPath: anchor], constant: -constant)
+        removeSimilarConstraints([constraint])
+        NSLayoutConstraint.activate([constraint])
         return self
     }
     
